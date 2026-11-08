@@ -109,7 +109,7 @@ def build_message_from_cache() -> list[str]:
     lines = ["## ** OUR GAMES **"]
     for uid, (name, status, players, link) in combined:
         icon = "🟢" if status else "🔴"
-        status_text = "Active" if status else "Down"
+        status_text = "Active" if status else "Deleted"
         lines.append(
             f"**{name}**\n"
             f"> * Game Status: {status_text} {icon}\n"
